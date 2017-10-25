@@ -124,6 +124,31 @@ p {
    display: block;
    margin:3em auto 0;
  }
+ 
+ @media (min-width: 320px) { /*MOBILE PHONES*/
+    header .hero img {
+      width: 50%;
+    }
+    header .hero h1 {
+      font-size: 36px;
+    }
+    header .hero h2 {
+      font-size: 30px;
+    }
+  }
+  @media (min-width: 768px) { /*TABLETS*/
+    header .hero img {
+      width: 75%;
+    }
+ }
+    nav .one-half {
+      width: 46%;
+  }
+ @media (min-width: 1024px) { /*DESKTOP*/
+   header .hero img {
+     width: 100%;
+   }
+ }
 
  /* BUTTONS */
  .btn {
