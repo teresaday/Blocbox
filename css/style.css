@@ -43,30 +43,6 @@ p {
    margin:0 2% 20px;
  }
 
- @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-  .one-half {
-    width:46%;
-  }
-  .one-third {
-    width:29.33333%;
-  }
-  .one-fourth {
-    width:21%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 
 /* HEADER */
  header {
@@ -125,30 +101,7 @@ p {
    margin:3em auto 0;
  }
 
- @media (min-width: 320px) { /*MOBILE PHONES*/
-    header .hero img {
-      width: 50%;
-    }
-    header .hero h1 {
-      font-size: 36px;
-    }
-    header .hero h2 {
-      font-size: 30px;
-    }
-  }
-  @media (min-width: 768px) { /*TABLETS*/
-    header .hero img {
-      width: 75%;
-    }
- }
-    nav .one-half {
-      width: 46%;
-  }
- @media (min-width: 1024px) { /*DESKTOP*/
-   header .hero img {
-     width: 100%;
-   }
- }
+
 
  /* BUTTONS */
  .btn {
@@ -321,12 +274,20 @@ p {
 }
 
 /* FOOTER */
+ .CTA {
+   text-align: center;
+   height: 200px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+
+/* FOOTER */
  footer {
    background-color: #34495E;
    background-image: linear-gradient(to top,
       #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
    color: #FFFFFF;
-   height: 150px;
    position: relative;
    overflow: hidden;
    z-index: 0;
@@ -349,10 +310,62 @@ p {
    background-color: transparent;
  }
  footer .logo{
-   padding: 2.35em 0;
+   padding: 1em 0;
    margin: 0 auto;
    display: block;
  }
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+ .container {
+   width: 750px;
+ }
+}
+@media (min-width: 992px) {
+ .container {
+   width: 970px;
+ }
+ .one-half {
+   width:46%;
+ }
+ .one-third {
+   width:29.33333%;
+ }
+ .one-fourth {
+   width:21%;
+ }
+}
+@media (min-width: 1200px) {
+ .container {
+   width: 1170px;
+ }
+}
+
+@media (min-width: 320px) { /*MOBILE PHONES*/
+   header .hero img {
+     width: 80%;
+   }
+   header .hero h1 {
+     font-size: 36px;
+   }
+   header .hero h2 {
+     font-size: 30px;
+   }
+ }
+ @media (min-width: 768px) { /*TABLETS*/
+   header .hero img {
+     width: 80%;
+   }
+}
+   nav .one-half {
+     width: 46%;
+ }
+@media (min-width: 1024px) { /*DESKTOP*/
+  header .hero img {
+    width: 900px;
+  }
+}
 
  @media (min-width: 992px){
     footer{
