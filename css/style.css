@@ -430,6 +430,15 @@ p {
    margin-right:10px;
    margin-top:8px;
  }
+ .left-nav .settings a.cog {
+   color:#FFFFFF;
+   text-decoration: none;
+   text-align: right;
+   float: right;
+   margin-right:10px;
+   margin-top:-3px;
+ }
+
 
  /* CONTENT */
  .content {
